@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="fields">
+
+       <field name="label" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_LABEL" description="COM_FSCOMBUILDER_DESC_FIELDS_LABEL" required="true" filter="safehtml" /> 
+
+       <field name="name" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_NAME" description="COM_FSCOMBUILDER_DESC_FIELDS_NAME" required="true" filter="safehtml" />
+	   
+	   <field name="default" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_DEFAULT" description="COM_FSCOMBUILDER_DESC_FIELDS_DEFAULT" filter="safehtml" /> 
+	   
+	   <field name="description" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_DESCRIPTION" description="COM_FSCOMBUILDER_DESC_FIELDS_DESCRIPTION" filter="safehtml" /> 
+	  
+	    <field name="readonly" type="checkbox" value='readonly' class="inputbox" label="COM_FSCOMBUILDER_FIELDS_READONLY" description="COM_FSCOMBUILDER_DESC_FIELDS_READONLY" filter="safehtml" /> 
+	   
+	   <field name="disabled" type="checkbox" value='disabled' class="inputbox" label="COM_FSCOMBUILDER_FIELDS_DISABLED" description="COM_FSCOMBUILDER_DESC_FIELDS_DISABLED" filter="safehtml" /> 
+	    
+	   <field name="class" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_CLASS" description="COM_FSCOMBUILDER_DESC_FIELDS_CLASS" filter="safehtml" /> 
+	   
+	   <field name="format" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_FORMAT" description="COM_FSCOMBUILDER_DESC_FIELDS_FORMAT" filter="safehtml" /> 
+	   
+	   <field name="required" type="checkbox" value='true' class="inputbox" label="COM_FSCOMBUILDER_FIELDS_REQUIRED" description="COM_FSCOMBUILDER_DESC_FIELDS_REQUIRED" filter="safehtml" /> 
+	   
+	   <field name="filter" type="sql" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_FILTER" description="COM_FSCOMBUILDER_DESC_FIELDS_FILTER" default="safehtml" query="SELECT display, value FROM #__wbty_users_filters" key_field="value" value_field="display" />
+	   
+	   <field name="sql_value" type="hidden" default="VARCHAR(255)" />
+	   
+	</fieldset>
+
+</form>

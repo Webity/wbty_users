@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+    	<name>wbty_users</name>
+    <creationDate>2013-08-28</creationDate>
+    <copyright>Copyright (C) 2012-2013. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Webity</author>
+    <authorEmail>david@makethewebwork.com</authorEmail>
+    <authorUrl>http://www.makethewebwork.com</authorUrl>
+    <version>1</version>
+    <description>A Webity Component for extending Joomla's built-in user system</description>
+
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<filename>wbty_users.php</filename>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>language</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+    </files>
+	<media folder="media" destination="wbty_users">
+		<folder>css</folder>
+        <folder>font</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+	</media>
+    <languages folder="site">
+        <language tag="en-GB">language/en-GB.com_wbty_users.ini
+        </language>
+    </languages>
+    <administration>
+        <!-- Need to add image still <menu img="media/wbty_users/img/s_com_wbty_users.png" >com_wbty_users</menu>-->
+		<menu>com_wbty_users</menu>
+        <submenu>
+			
+        </submenu>
+        <files folder="administrator">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>wbty_users.php</filename>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>language</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+        </files>
+        <languages folder="administrator">
+            <language tag="en-GB">language/en-GB.com_wbty_users.ini
+            </language>
+            <language tag="en-GB">language/en-GB.com_wbty_users.sys.ini
+            </language>
+        </languages>
+    </administration>
+
+    <update> <!-- Runs on update; New in 1.7 -->
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+	
+	<scriptfile>script.wbty_users.php</scriptfile>
+    
+    <updateservers>
+        <server type="extension" priority="1" name="Wbty_users Updates">http://wbty.co/com_wbty_users.xml</server>
+    </updateservers>
+</extension>

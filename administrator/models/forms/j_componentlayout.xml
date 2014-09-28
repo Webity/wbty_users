@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="fields">
+
+       <field name="label" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_LABEL" description="COM_FSCOMBUILDER_DESC_FIELDS_LABEL" required="true" filter="safehtml" /> 
+
+       <field name="name" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_NAME" description="COM_FSCOMBUILDER_DESC_FIELDS_NAME" required="true" filter="safehtml" />
+	   
+	   <field name="extension" type="text" size="40" default="" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_EXTENSION" description="COM_FSCOMBUILDER_DESC_FIELDS_EXTENSION" filter="safehtml" /> 
+	        
+	   <field name="view" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_VIEW" description="COM_FSCOMBUILDER_DESC_FIELDS_VIEW" filter="safehtml" /> 
+	   
+	   <field name="useglobal" type="checkbox" value='true' class="inputbox" label="COM_FSCOMBUILDER_FIELDS_USEGLOBAL" description="COM_FSCOMBUILDER_DESC_FIELDS_USEGLOBAL" filter="safehtml" /> 
+	   
+	   <field name="description" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_DESCRIPTION" description="COM_FSCOMBUILDER_DESC_FIELDS_DESCRIPTION" required="true" filter="safehtml" /> 
+	      
+	   <field name="required" type="checkbox" value='true' class="inputbox" label="COM_FSCOMBUILDER_FIELDS_REQUIRED" description="COM_FSCOMBUILDER_DESC_FIELDS_REQUIRED" filter="safehtml" />
+	   
+	   <field name="sql_value" type="hidden" default="VARCHAR(255)" /> 
+	   	   
+	</fieldset>
+
+</form>

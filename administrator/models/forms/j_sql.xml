@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="fields">
+
+       <field name="label" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_LABEL" description="COM_FSCOMBUILDER_DESC_FIELDS_LABEL" required="true" filter="safehtml" /> 
+
+       <field name="name" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_NAME" description="COM_FSCOMBUILDER_DESC_FIELDS_NAME" required="true" filter="safehtml" />
+	   
+	   <field name="query" type="sql" default="" label="COM_FSCOMBUILDER_FIELDS_QUERY" description="COM_FSCOMBUILDER_DESC_FIELDS_QUERY" query="SELECT id, table_display_name FROM #__fscombuilder_tables" key_field="id" value_field="table_display_name">
+	   	  <option value=""></option>
+	   </field>
+  
+ 		<field name="value_field" type="sql" default="" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_VALUEFIELD" description="COM_FSCOMBUILDER_DESC_FIELDS_VALUEFIELD" filter="safehtml" />
+		
+		<field name="key_field" type="hidden" default="id" class="inputbox" /> 
+		
+		<field name="default" type="text" size="40" default="" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_DEFAULT" description="COM_FSCOMBUILDER_DESC_FIELDS_DEFAULT" filter="safehtml" /> 
+	   
+	   <field name="description" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_DESCRIPTION" description="COM_FSCOMBUILDER_DESC_FIELDS_DESCRIPTION" filter="safehtml" /> 
+
+ 		<field name="default" type="text" size="40" default="" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_DEFAULT" description="COM_FSCOMBUILDER_DESC_FIELDS_DEFAULT" filter="safehtml" /> 
+
+	   <field name="translate" type="checkbox" value='true' class="inputbox" label="COM_FSCOMBUILDER_FIELDS_TRANSLATE" description="COM_FSCOMBUILDER_DESC_FIELDS_TRANSLATE" filter="safehtml" /> 
+
+	   <field name="required" type="checkbox" value='true' class="inputbox" label="COM_FSCOMBUILDER_FIELDS_REQUIRED" description="COM_FSCOMBUILDER_DESC_FIELDS_REQUIRED" filter="safehtml" /> 
+
+	   <field name="add_modal_new" type="checkbox" value='true' class="inputbox" label="COM_FSCOMBUILDER_FIELDS_ADD_MODAL_NEW" description="COM_FSCOMBUILDER_DESC_FIELDS_ADD_MODAL_NEW" filter="safehtml" /> 
+
+	   <field name="controls_subtables" type="checkbox" value='true' class="inputbox" label="COM_FSCOMBUILDER_FIELDS_CONTROLS_SUBTABLES" description="COM_FSCOMBUILDER_DESC_FIELDS_CONTROLS_SUBTABLES" filter="safehtml" /> 
+	   
+	   <field name="sql_value" type="hidden" default="INT(11)" />
+	</fieldset>
+
+</form>

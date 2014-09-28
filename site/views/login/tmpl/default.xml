@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="User - Login/Register" option="View">
+	</layout>
+
+	<fields name="request">
+		<fieldset name="request">
+			<field name="redirect" type="text"
+				label="Redirect URL"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="admin"
+		label="COM_USERS_PROFILE_DEFAULT_LABEL">
+
+		<field name="id" type="hidden"
+			filter="integer"
+		/>
+
+		<field name="name" type="hidden" />
+
+		<field name="first_name" type="text"
+			description="COM_USERS_REGISTER_NAME_DESC"
+			filter="string"
+			label="First Name"
+			size="30"
+		/>
+
+		<field name="last_name" type="text"
+			description="COM_USERS_REGISTER_NAME_DESC"
+			filter="string"
+			label="Last Name"
+			size="30"
+		/>
+
+		<field name="username" type="text"
+			class="validate-username"
+			description="COM_USERS_DESIRED_USERNAME"
+			filter="username"
+			label="COM_USERS_PROFILE_USERNAME_LABEL"
+			message="COM_USERS_PROFILE_USERNAME_MESSAGE"
+			size="30"
+			validate="username"
+		/>
+
+		<field name="password1" type="password"
+			autocomplete="off"
+			class="validate-password"
+			description="COM_USERS_PROFILE_PASSWORD1_DESC"
+			filter="raw"
+			label="COM_USERS_PROFILE_PASSWORD1_LABEL"
+			size="30"
+			validate="password"
+		/>
+
+		<field name="email1" type="email"
+			description="COM_USERS_PROFILE_EMAIL1_DESC"
+			filter="string"
+			label="COM_USERS_PROFILE_EMAIL1_LABEL"
+			message="COM_USERS_PROFILE_EMAIL1_MESSAGE"
+			size="30"
+			unique="true"
+			validate="email"
+		/>
+	</fieldset>
+</form>

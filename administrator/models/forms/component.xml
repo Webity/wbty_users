@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="component">
+        <fieldset name="component">
+
+            <field name="id" type="hidden" default="0" class="id" /> 
+    
+		<field type="text" label="COM_WBTY_USERS_FORM_LBL_COMPONENTS_NAME" name="name" filter="safehtml" required="true" class="default_col" />
+		<field type="text" label="COM_WBTY_USERS_FORM_LBL_COMPONENTS_ASSET_ID" name="asset_id" filter="safehtml" required="true" />
+		<field type="text" label="COM_WBTY_USERS_FORM_LBL_COMPONENTS_BASE_USER_GROUP" name="base_user_group" filter="safehtml" />
+		<field type="text" label="COM_WBTY_USERS_FORM_LBL_COMPONENTS_USER_FORM" name="user_form" filter="safehtml" />
+
+            <field name="state" type="hidden" default="1" /> 
+
+            <field name="checked_out" type="hidden" filter="unset" />
+            <field name="checked_out_time" type="hidden" filter="unset" />
+            
+            <field name="modified_by" type="hidden" filter="integer" overwrite="true" />
+            <field name="modified_time" type="hidden" filter="safehtml" overwrite="true" />
+
+        </fieldset>
+    </fields>
+
+
+	<fieldset name="component_asset" loadForm="component_asset"></fieldset>
+
+</form>

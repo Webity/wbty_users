@@ -1,0 +1,101 @@
+#signup dl {overflow: auto;}
+#signup #member-registration {padding: 0;}
+#signup #member-registration fieldset {margin: 0; padding: 0;}
+#member-registration dl {margin-top: 0;}
+#member-registration dl > dd:after {display: table; content: ""; clear: both;}
+#member-registration .red, #member-registration .star, #login .star {color: #cb000c;}
+
+#member-registration #recaptcha_area {margin-left: -8px;}
+#member-registration fieldset dd input[name="tos"] {width: auto; margin-left: -15em;}
+
+.clr { clear:both; }
+.fltlft { float:left; }
+.fltrt {float:right; }
+
+/* Permission checkbox styling */
+.permissions .spacer .control-label {color: black; font-size: 1.5em; float: left; margin-left:0;}
+.permissions label.control-label {margin-left: 150px; width: 220px; color: black; font-size: 1.2em;text-align:left;}
+.permissions fieldset.checkboxes ul {list-style-type: none; margin-top: 40px;}
+.permissions fieldset.checkboxes label {margin-left: 20px; margin-top: -16px;}
+.permissions label.controls {margin-top: 40px;}
+
+/* Front end toolbar styling */
+div.toolbar-list li {
+	padding: 1px 1px 3px 4px;
+	text-align: center;
+	color: #666;
+	list-style: none;
+	float: left;
+	margin-left: 5px;
+}
+
+div.toolbar-list a {
+	display: block;
+	float: left;
+	white-space: nowrap;
+	border: 0;
+	padding: 1px 5px;
+	cursor: pointer;
+	position: relative;
+	top: auto;
+	left: auto;
+	width: auto;
+	background: initial;
+	margin: 0;
+	border-radius: 0;
+	box-shadow: none;
+	color:#fff;
+}
+
+body div.toolbar-list span {
+	vertical-align: inherit;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	float: none;
+	margin: 0;
+	display: inline-block;
+	background-size: 100%;
+}
+
+body .icon-32-send						{	background-image: url(../img/toolbar/icon-32-send.png);	}
+body .icon-32-delete						{	background-image: url(../img/toolbar/icon-32-delete.png);	}
+body .icon-32-help						{	background-image: url(../img/toolbar/icon-32-help.png);	}
+body .icon-32-cancel						{	background-image: url(../img/toolbar/icon-32-cancel.png);	}
+body .icon-32-checkin					{	background-image: url(../img/toolbar/icon-32-checkin.png);	}
+body .icon-32-options					{	background-image: url(../img/toolbar/icon-32-config.png);	}
+body .icon-32-apply						{	background-image: url(../img/toolbar/icon-32-apply.png);	}
+body .icon-32-back						{	background-image: url(../img/toolbar/icon-32-back.png);	}
+body .icon-32-export						{	background-image: url(../img/toolbar/icon-32-export.png);	}
+body .icon-32-forward					{	background-image: url(../img/toolbar/icon-32-forward.png);	}
+body .icon-32-save						{	background-image: url(../img/toolbar/icon-32-save.png);	}
+body .icon-32-edit						{	background-image: url(../img/toolbar/icon-32-edit.png);	}
+body .icon-32-copy						{	background-image: url(../img/toolbar/icon-32-copy.png);	}
+body .icon-32-move						{	background-image: url(../img/toolbar/icon-32-move.png);	}
+body .icon-32-new						{	background-image: url(../img/toolbar/icon-32-new.png);	}
+body .icon-32-upload						{	background-image: url(../img/toolbar/icon-32-upload.png);	}
+body .icon-32-assign						{	background-image: url(../img/toolbar/icon-32-publish.png);	}
+body .icon-32-html						{	background-image: url(../img/toolbar/icon-32-html.png);	}
+body .icon-32-css						{	background-image: url(../img/toolbar/icon-32-css.png);	}
+body .icon-32-menus						{	background-image: url(../img/toolbar/icon-32-menu.png);	}
+body .icon-32-publish					{	background-image: url(../img/toolbar/icon-32-publish.png);	}
+body .icon-32-unblock					{	background-image: url(../img/toolbar/icon-32-unblock.png);	}
+body .icon-32-unpublish					{	background-image: url(../img/toolbar/icon-32-unpublish.png);	}
+body .icon-32-restore					{	background-image: url(../img/toolbar/icon-32-revert.png);	}
+body .icon-32-trash						{	background-image: url(../img/toolbar/icon-32-trash.png);	}
+body .icon-32-archive					{	background-image: url(../img/toolbar/icon-32-archive.png);	}
+body .icon-32-unarchive					{	background-image: url(../img/toolbar/icon-32-unarchive.png);	}
+body .icon-32-preview					{	background-image: url(../img/toolbar/icon-32-preview.png);	}
+body .icon-32-default					{	background-image: url(../img/toolbar/icon-32-default.png);	}
+body .icon-32-refresh					{	background-image: url(../img/toolbar/icon-32-refresh.png);	}
+body .icon-32-save-new					{	background-image: url(../img/toolbar/icon-32-save-new.png);	}
+body .icon-32-save-copy					{	background-image: url(../img/toolbar/icon-32-save-copy.png);	}
+body .icon-32-error						{	background-image: url(../img/toolbar/icon-32-error.png);	}
+body .icon-32-new-style					{	background-image: url(../img/toolbar/icon-32-new-style.png);	}
+body .icon-32-delete-style				{	background-image: url(../img/toolbar/icon-32-delete-style.png);	}
+body .icon-32-purge						{	background-image: url(../img/toolbar/icon-32-purge.png);	}
+body .icon-32-remove						{	background-image: url(../img/toolbar/icon-32-remove.png);	}
+body .icon-32-featured					{	background-image: url(../img/toolbar/icon-32-featured.png);	}
+body .icon-32-stats						{	background-image: url(../img/toolbar/icon-32-stats.png);	}
+body .icon-32-print						{	background-image: url(../img/toolbar/icon-32-print.png);	}
+.toolbar-inactive					{	background-position: 0 32px;  }

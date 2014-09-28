@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="fields">
+
+       <field name="label" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_LABEL" description="COM_FSCOMBUILDER_DESC_FIELDS_LABEL" required="true" filter="safehtml" /> 
+
+       <field name="name" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_NAME" description="COM_FSCOMBUILDER_DESC_FIELDS_NAME" required="true" filter="safehtml" />
+	   
+	   <field name="description" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_DESCRIPTION" description="COM_FSCOMBUILDER_DESC_FIELDS_DESCRIPTION" required="true" filter="safehtml" /> 
+	   
+	   <field name="directory" type="text" size="40" default="" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_DIRECTORY" description="COM_FSCOMBUILDER_DESC_FIELDS_DIRECTORY" filter="safehtml" /> 
+	   
+	   <field name="preview" type="checkbox" value='true' class="inputbox" label="COM_FSCOMBUILDER_FIELDS_PREVIEW" description="COM_FSCOMBUILDER_DESC_FIELDS_PREVIEW" filter="safehtml" />
+	   
+	   <field name="required" type="checkbox" value='true' class="inputbox" label="COM_FSCOMBUILDER_FIELDS_REQUIRED" description="COM_FSCOMBUILDER_DESC_FIELDS_REQUIRED" filter="safehtml" />
+	   
+	   <field name="sql_value" type="hidden" default="VARCHAR(500)" />
+	   
+	</fieldset>
+
+</form>

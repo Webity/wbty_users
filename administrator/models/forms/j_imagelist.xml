@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="fields">
+
+       <field name="label" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_LABEL" description="COM_FSCOMBUILDER_DESC_FIELDS_LABEL" required="true" filter="safehtml" /> 
+
+       <field name="name" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_NAME" description="COM_FSCOMBUILDER_DESC_FIELDS_NAME" required="true" filter="safehtml" />
+	   
+	   <field name="directory" type="text" size="40" default="" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_DIRECTORY" description="COM_FSCOMBUILDER_DESC_FIELDS_DIRECTORY" filter="safehtml" /> 
+	   
+		 <field name="default" type="text" size="40" default="" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_DEFAULT" description="COM_FSCOMBUILDER_DESC_FIELDS_DEFAULT" filter="safehtml" /> 
+	   
+	   <field name="description" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_DESCRIPTION" description="COM_FSCOMBUILDER_DESC_FIELDS_DESCRIPTION" required="true" filter="safehtml" /> 
+	   
+	   <field name="filter" type="sql" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_FILTER" description="COM_FSCOMBUILDER_DESC_FIELDS_FILTER" default="safehtml" query="SELECT display, value FROM #__wbty_users_filters" key_field="value" value_field="display" />
+	
+	 <field name="exclude" type="text" size="40" class="inputbox" label="COM_FSCOMBUILDER_FIELDS_EXCLUDE" description="COM_FSCOMBUILDER_DESC_FIELDS_EXCLUDE" required="true" filter="safehtml" /> 
+	
+	 <field name="stripext" type="checkbox" value='true' class="inputbox" label="COM_FSCOMBUILDER_FIELDS_STRIPEXT" description="COM_FSCOMBUILDER_DESC_FIELDS_STRIPEXT" filter="safehtml" /> 
+	 
+	  <field name="hidenone" type="checkbox" value='true' class="inputbox" label="COM_FSCOMBUILDER_FIELDS_HIDENONE" description="COM_FSCOMBUILDER_DESC_FIELDS_HIDENONE" filter="safehtml" /> 
+	  
+	   <field name="hidedefault" type="checkbox" value='true' class="inputbox" label="COM_FSCOMBUILDER_FIELDS_HIDEDEFAULT" description="COM_FSCOMBUILDER_DESC_FIELDS_HIDEDEFAULT" filter="safehtml" /> 
+	
+	   <field name="required" type="checkbox" value='true' class="inputbox" label="COM_FSCOMBUILDER_FIELDS_REQUIRED" description="COM_FSCOMBUILDER_DESC_FIELDS_REQUIRED" filter="safehtml" />
+	   
+	   <field name="sql_value" type="hidden" default="VARCHAR(255)" />
+	   
+	</fieldset>
+
+</form>
